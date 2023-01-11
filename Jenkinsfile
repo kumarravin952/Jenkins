@@ -13,6 +13,11 @@ pipeline {
                 }
 
             }
+	
+	    stage ("test") {
+		steps {
+			echo "Testing the code"
+		}
 
             stage ("Release") {
                 steps {
